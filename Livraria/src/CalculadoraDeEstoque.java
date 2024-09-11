@@ -2,7 +2,6 @@ package Livraria.src;
 
 public class CalculadoraDeEstoque {
     public static void main(String[] args) {
-
         double soma = 0;
 
         for (double contador = 0; contador < 35; contador++) {
