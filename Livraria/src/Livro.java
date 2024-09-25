@@ -1,5 +1,3 @@
-package Livraria.src;
-
 public class Livro {
     
     String nome;

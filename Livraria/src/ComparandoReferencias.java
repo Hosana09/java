@@ -1,5 +1,3 @@
-package Livraria.src;
-
 public class ComparandoReferencias {
     public static void main(String[] args) {
         Autor autor = new Autor();
