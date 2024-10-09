@@ -14,5 +14,10 @@ public class Livro {
         System.out.println("Valor: " + valor);
         System.out.println("ISBN :" + isbn);
         System.out.println("--");
+        autor.mostrarDetalhes();
+    }
+
+    public void aplicaDesconto(double porcentagem) {
+        this.valor -= this.valor * porcentagem; 
     }
 }
