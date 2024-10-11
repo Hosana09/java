@@ -14,5 +14,13 @@ public class CadastroDeLivros {
         livro.autor = autor;
 
         livro.mostrarDetalhes();
+
+        Livro novoLivro = new Livro();
+        novoLivro.nome = "Java 8 Prático";
+        novoLivro.descricao = "Novos recursos da linguagem";
+        novoLivro.valor = 59.9;
+        novoLivro.isbn = "978-85-66250-46-6";
+
+        novoLivro.mostrarDetalhes();
     }
 }
