@@ -9,7 +9,7 @@ public class CadastroDeLivros {
         Livro livro = new Livro();
         livro.nome = "Java 8 Prático";
         livro.descricao = "Novos recursos da linguagem";
-        livro.valor = 59.9;
+        livro.adicionaValor(59.9);
         livro.isbn = "978-85-66250-46-6";
         livro.autor = autor;
 
@@ -18,7 +18,7 @@ public class CadastroDeLivros {
         Livro novoLivro = new Livro();
         novoLivro.nome = "Java 8 Prático";
         novoLivro.descricao = "Novos recursos da linguagem";
-        novoLivro.valor = 59.9;
+        novoLivro.adicionaValor(59.9);
         novoLivro.isbn = "978-85-66250-46-6";
 
         novoLivro.mostrarDetalhes();

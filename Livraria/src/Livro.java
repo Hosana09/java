@@ -31,4 +31,12 @@ public class Livro {
     boolean temAutor() {
         return this.autor != null;
     }
+
+    void adicionaValor(double valor) {
+        this.valor = valor;
+    }
+
+    double retornaValor() {
+        return this.valor;
+    }
 }
