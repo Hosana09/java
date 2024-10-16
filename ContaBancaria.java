@@ -25,8 +25,12 @@ public class ContaBancaria {
     }
 
     public double sacar(double saque) {
-        this.saldo = this.saldo - saque;
-        System.out.println("O saldo atual, após o saque, é de " + this.saldo + ".");
+        if (saque > this.saldo) {
+            System.out.println("Seu saldo é insuficiente para este saque. Tente novamente com um valor de até " + this.saldo + ".");
+        } else {
+            this.saldo = this.saldo - saque;
+            System.out.println("O saldo atual, após o saque, é de " + this.saldo + ".");
+        }
         return this.saldo;
     }
 
@@ -36,7 +40,7 @@ public class ContaBancaria {
         contaBancaria.depositar(50);
         contaBancaria.sacar(10);
         contaBancaria.depositar(50000.45);
-        contaBancaria.sacar(412.4);
+        contaBancaria.sacar(400012.4);
         contaBancaria.depositar(785.65);
         contaBancaria.verNumeroDaConta();
         contaBancaria.verSaldo();
