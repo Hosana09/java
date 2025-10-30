@@ -9,5 +9,8 @@ public class Variaveis {
         char caractere;
         float preco = 34.2f; // 'f' indica que é um float, o valor de ponto flutuante padrão é double
         String nome;
+        int idade = 25;
+
+        System.out.println("Eu tenho " + idade + " anos.");
     }
 }
