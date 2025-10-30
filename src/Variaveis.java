@@ -1,5 +1,6 @@
 public class Variaveis {
 
+    // O método main é o que o Java procura para iniciar a execução do programa
     public static void main(String[] args) {
         // Declaração de variáveis
         // Declarar e inicializar é quando você atribui um valor à variável no momento em que a declara
