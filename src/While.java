@@ -4,7 +4,7 @@ public class While {
     public static void main(String[] args) {
         int idade;
         String nome;
-        int ano = 0;
+        int ano;
 
         try (Scanner teclado = new Scanner(System.in)) {
             System.out.print("Qual seu nome? ");
