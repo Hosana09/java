@@ -21,5 +21,16 @@ public class Produto {
         this.preco += valor;
     }
 
+    public Produto(String nome, float preco, float desconto) {
+        // this se refere ao objeto atual da classe
+        this.nome = nome;
+        this.preco = preco;
+        this.desconto = desconto;
+    }
 
+    void imprimeInformacoes() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Preço: " + this.preco);
+        System.out.println("Desconto: " + this.desconto);
+    }
 }
