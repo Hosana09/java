@@ -1,4 +1,6 @@
+import br.com.hosana.modelos.Aluno;
 import br.com.hosana.modelos.Produto;
+import br.com.hosana.modelos.Professor;
 
 public class Classes {
     public static void main(String[] args) {
@@ -33,5 +35,11 @@ public class Classes {
 
         caneta.aumentarPreco(1.0f);
         System.out.println("Preço após aumento: " + caneta.preco);
+
+        Aluno hosana = new Aluno("Hosana", 2000, "123456", "Engenharia de Software");
+        System.out.println("Nome do Aluno: " + hosana.getNome());
+
+        Professor silvia = new Professor("Silvia", 1980, "654321");
+        System.out.println("Nome do Professor: " + silvia.getNome());
     }
 }
