@@ -29,4 +29,8 @@ public class Aluno extends Pessoa {
     public void setCurso(String curso) {
         this.curso = curso;
     }
+
+    public String toString() {
+        return super.toString() + ", RA: " + this.ra + ", Curso: " + this.curso;
+    }
 }

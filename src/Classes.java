@@ -38,8 +38,10 @@ public class Classes {
 
         Aluno hosana = new Aluno("Hosana", 2000, "123456", "Engenharia de Software");
         System.out.println("Nome do Aluno: " + hosana.getNome());
+        System.out.println(hosana);
 
         Professor silvia = new Professor("Silvia", 1980, "654321");
         System.out.println("Nome do Professor: " + silvia.getNome());
+        System.out.println(silvia);
     }
 }
