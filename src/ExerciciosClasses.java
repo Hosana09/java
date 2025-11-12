@@ -1,3 +1,7 @@
+import br.com.hosana.modelos.Agenda;
+import br.com.hosana.modelos.Contato;
+import br.com.hosana.modelos.Televisao;
+
 public class ExerciciosClasses {
     public static void main(String[] args) {
         Contato ana = new Contato("Ana", "ana@gmail.com", 123456789);

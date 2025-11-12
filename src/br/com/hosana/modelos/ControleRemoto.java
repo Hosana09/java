@@ -1,3 +1,4 @@
+package br.com.hosana.modelos;
 public class ControleRemoto {
     boolean ligaDesliga(boolean ligada) {
         return !ligada;

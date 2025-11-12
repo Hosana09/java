@@ -1,3 +1,4 @@
+package br.com.hosana.modelos;
 public class Contato {
     String nome;
     String email;
@@ -33,7 +34,7 @@ public class Contato {
         return this.telefone;
     }
 
-    void imprimeInformacoes() {
+    public void imprimeInformacoes() {
         System.out.println("Nome: " + this.nome);
         System.out.println("Email: " + this.email);
         System.out.println("Telefone: " + this.telefone);

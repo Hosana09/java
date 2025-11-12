@@ -1,3 +1,5 @@
+import br.com.hosana.modelos.Produto;
+
 public class Classes {
     public static void main(String[] args) {
         //  Instanciando um objeto da classe Produto

@@ -1,3 +1,4 @@
+package br.com.hosana.modelos;
 public class Televisao {
     boolean ligada;
     int volume;
@@ -11,7 +12,7 @@ public class Televisao {
         this.controleRemoto = new ControleRemoto();
     }
 
-    void ligaDesliga() {
+    public void ligaDesliga() {
         this.ligada = controleRemoto.ligaDesliga(this.ligada);
 
         if (this.ligada) {
@@ -21,27 +22,27 @@ public class Televisao {
         }
     }
 
-    void aumentarVolume() {
+    public void aumentarVolume() {
         this.volume = controleRemoto.aumentarVolume(this.volume);
         System.out.println("Volume aumentado. Volume atual: " + this.volume);
     }
 
-    void diminuirVolume() {
+    public void diminuirVolume() {
         this.volume = controleRemoto.diminuirVolume(this.volume);
         System.out.println("Volume diminuído. Volume atual: " + this.volume);
     }
 
-    void mudarCanalParaCima() {
+    public void mudarCanalParaCima() {
         this.canal = controleRemoto.mudarCanalParaCima(this.canal);
         System.out.println("Canal mudado para cima. Canal atual: " + this.canal);
     }
 
-    void mudarCanalParaBaixo() {
+    public void mudarCanalParaBaixo() {
         this.canal = controleRemoto.mudarCanalParaBaixo(this.canal);
         System.out.println("Canal mudado para baixo. Canal atual: " + this.canal);
     }
 
-    void mudarCanal(int novoCanal) {
+    public void mudarCanal(int novoCanal) {
         int canalAlterado = controleRemoto.mudarCanal(novoCanal);
         if (canalAlterado != -1) {
             this.canal = canalAlterado;

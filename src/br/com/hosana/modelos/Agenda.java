@@ -1,18 +1,19 @@
+package br.com.hosana.modelos;
 
 import java.util.ArrayList;
 
 public class Agenda {
     ArrayList<Contato> contatos = new ArrayList<>();
 
-    void adicionaContato(Contato contato) {
+    public void adicionaContato(Contato contato) {
         contatos.add(contato);
     }
 
-    void removeContato(Contato contato) {
+    public void removeContato(Contato contato) {
         contatos.remove(contato);
     }
 
-    int buscaContatoPorNome(String nome) {
+    public int buscaContatoPorNome(String nome) {
         for (int i = 0; i < contatos.size(); i++) {
             if (contatos.get(i).getNome().equals(nome)) {
                 return i;
@@ -21,7 +22,7 @@ public class Agenda {
         return -1; // Retorna -1 se o contato não for encontrado
     }
 
-    void imprimeAgenda() {
+    public void imprimeAgenda() {
         System.out.println("-------- Agenda de Contatos --------");
         for (Contato contato : contatos) {
             contato.imprimeInformacoes();
@@ -32,7 +33,7 @@ public class Agenda {
         System.out.println("-------- Fim da Agenda --------");
     }
 
-    void imprimeContatoPorIndice(int indice) {
+    public void imprimeContatoPorIndice(int indice) {
         if (indice >= 0 && indice < contatos.size()) {
             contatos.get(indice).imprimeInformacoes();
         } else {

@@ -1,3 +1,4 @@
+package br.com.hosana.modelos;
 /*
 - Nome de classes devem ser substantivos ou substantivos compostos, iniciando com letra maiúscula e utilizando a convenção CamelCase
 - Nome de classes não devem conter caracteres especiais, espaços ou números no início
@@ -13,11 +14,11 @@
 */
 
 public class Produto {
-    String nome;
-    float preco;
-    float desconto;
+    public String nome;
+    public float preco;
+    public float desconto;
 
-    void aumentarPreco(float valor) {
+    public void aumentarPreco(float valor) {
         this.preco += valor;
     }
 
@@ -28,7 +29,7 @@ public class Produto {
         this.desconto = desconto;
     }
 
-    void imprimeInformacoes() {
+    public void imprimeInformacoes() {
         System.out.println("Nome: " + this.nome);
         System.out.println("Preço: " + this.preco);
         System.out.println("Desconto: " + this.desconto);
