@@ -1,9 +1,9 @@
 package br.com.hosana.modelos;
 
 public class Moto {
-    private String marca;
-    private String modelo;
-    private String cor;
+    private final String marca;
+    private final String modelo;
+    private final String cor;
     private int marcha;
 
     public Moto(String marca, String modelo, String cor) {

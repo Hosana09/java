@@ -1,6 +1,6 @@
 package br.com.hosana.modelos;
 
-public class Quadrado {
+public final class Quadrado {
     private float lado;
     private float area;
     private float perimetro;
