@@ -1,6 +1,8 @@
 import br.com.hosana.modelos.Aluno;
+import br.com.hosana.modelos.Moto;
 import br.com.hosana.modelos.Produto;
 import br.com.hosana.modelos.Professor;
+import br.com.hosana.modelos.Quadrado;
 
 public class Classes {
     public static void main(String[] args) {
@@ -45,5 +47,13 @@ public class Classes {
         System.out.println("Nome do Professor: " + silvia.getNome());
         System.out.println(silvia);
         System.out.println(silvia.mensagem());
+
+        Quadrado quadrado = new Quadrado(5.0f);
+        quadrado.imprimirInformacoes();
+
+        Moto moto = new Moto("Honda", "CB500F", "Vermelha");
+        moto.imprimirInformacoes();
+        moto.mudarMarcha(3);
+        moto.mudarMarcha(7);
     }
 }
