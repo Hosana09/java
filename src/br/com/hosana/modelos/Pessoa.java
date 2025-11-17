@@ -26,7 +26,20 @@ public class Pessoa {
         this.anoNascimento = anoNascimento;
     }
 
+    @Override
     public String toString() {
         return "Nome: " + this.nome + ", Ano de Nascimento: " + this.anoNascimento;
+    }
+
+    public String mensagem() {
+        return "Olá, meu nome é " + this.nome + " e nasci em " + this.anoNascimento + ".";
+    }
+
+    public String mensagem(String idioma) {
+        return switch (idioma) {
+            case "en" -> "Hello, my name is " + this.nome + " and I was born in " + this.anoNascimento + ".";
+            case "es" -> "Hola, me llamo " + this.nome + " y nací en " + this.anoNascimento + ".";
+            default -> mensagem();
+        };
     }
 }

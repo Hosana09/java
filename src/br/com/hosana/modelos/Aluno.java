@@ -30,6 +30,7 @@ public class Aluno extends Pessoa {
         this.curso = curso;
     }
 
+    @Override
     public String toString() {
         return super.toString() + ", RA: " + this.ra + ", Curso: " + this.curso;
     }
