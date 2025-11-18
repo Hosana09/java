@@ -15,7 +15,7 @@ package br.com.hosana.interfaces;
 
 public interface IEletronico {
     // Todo produto eletrônico que implementar essa interface é da marca "Hosana Eletrônicos"
-    public String marca = "Hosana Eletrônicos";
+    public String MARCA = "Hosana Eletrônicos";
 
     public void ligar();
     public void desligar();
