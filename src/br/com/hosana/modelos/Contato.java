@@ -4,6 +4,13 @@ public class Contato {
     String email;
     int telefone;
 
+    /**
+     * Construtor da classe Contato.
+     * 
+     * @param nome    O nome do contato.
+     * @param email   O email do contato.
+     * @param telefone O telefone do contato.
+     */
     public Contato(String nome, String email, int telefone) {
         this.nome = nome;
         this.email = email;

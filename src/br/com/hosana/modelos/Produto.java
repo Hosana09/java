@@ -18,6 +18,11 @@ public class Produto {
     public float preco;
     public float desconto;
 
+    /**
+     * Aumenta o preço do produto em um valor especificado.
+     * 
+     * @param valor O valor a ser adicionado ao preço atual do produto.
+     */
     public void aumentarPreco(float valor) {
         this.preco += valor;
     }
@@ -29,6 +34,9 @@ public class Produto {
         this.desconto = desconto;
     }
 
+    /**
+     * Imprime as informações do produto no console.
+     */
     public void imprimeInformacoes() {
         System.out.println("Nome: " + this.nome);
         System.out.println("Preço: " + this.preco);
