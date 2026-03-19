@@ -13,12 +13,12 @@ public class OutrasClasses {
         System.out.println("Conta número: " + contaDaHosana.getNumero());
         System.out.println("Cliente: " + contaDaHosana.getCliente());
 
-        Conta.proximaconta();
+        Conta.proximaConta();
 
         Conta contaDoGabriel = new Conta("Gabriel");
         System.out.println("Conta número: " + contaDoGabriel.getNumero());
         System.out.println("Cliente: " + contaDoGabriel.getCliente());
 
-        Conta.proximaconta();
+        Conta.proximaConta();
     }
 }
