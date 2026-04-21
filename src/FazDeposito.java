@@ -2,8 +2,8 @@
 import br.com.hosana.modelos.Conta;
 
 public class FazDeposito implements Runnable {
-    private Conta conta;
-    private double valor;
+    private final Conta conta;
+    private final double valor;
 
     public FazDeposito(Conta conta, double valor) {
         this.conta = conta;

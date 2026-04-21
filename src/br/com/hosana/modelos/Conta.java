@@ -1,9 +1,9 @@
 package br.com.hosana.modelos;
 
 public class Conta {
-    private int numero;
-    private String cliente;
-    private float saldo;
+    private final int numero;
+    private final String cliente;
+    private double saldo;
 
     public static int contador =1;
 
@@ -22,7 +22,7 @@ public class Conta {
         return cliente;
     }
 
-    public float getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
 

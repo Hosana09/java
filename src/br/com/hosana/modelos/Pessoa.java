@@ -2,7 +2,7 @@ package br.com.hosana.modelos;
 
 // Conhecida como clase base, classe mãe, classe pai, superclasse e classe genérica.
 public abstract class Pessoa {
-    private String nome;
+    public String nome;
     private int anoNascimento;
 
     public Pessoa(String nome, int anoNascimento) {

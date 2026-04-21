@@ -31,8 +31,17 @@ public class Aluno extends Pessoa {
     }
 
     @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (!(object instanceof Aluno outroAluno)) return false;
+
+        return outroAluno.getNome().equals(this.nome);
+    }
+
+    @Override
     public String toString() {
-        return super.toString() + ", RA: " + this.ra + ", Curso: " + this.curso;
+        return this.nome;
+//        return super.toString() + ", RA: " + this.ra + ", Curso: " + this.curso;
     }
 
     @Override
